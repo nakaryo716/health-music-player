@@ -12,7 +12,7 @@ pub fn print_music_list() {
 }
 
 pub fn music_path_handler(num: u32) -> (&'static str, u64) {
-    let music_path = match num {
+    match num {
         1 => ("assets/drops.mp3", 135),
         2 => ("assets/hoshihuru.mp3", 160),
         3 => ("assets/neochi.mp3", 115),
@@ -21,9 +21,7 @@ pub fn music_path_handler(num: u32) -> (&'static str, u64) {
         _ => {
             panic!();
         }
-    };
-
-    music_path
+    }
 }
 
 pub fn select_number() -> u32 {
@@ -31,6 +29,6 @@ pub fn select_number() -> u32 {
     input! {
         num: u32,
     }
-
+    
     num
 }

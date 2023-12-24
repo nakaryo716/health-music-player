@@ -28,9 +28,11 @@ fn main() {
             let _ = stream_handle.play_raw(source.convert_samples());
 
             println!("now playing...");
+
             // 曲は別のオーディオスレッドで流れるようになっているため
             // このスレットを曲の時間分だけスリープ
             thread::sleep(std::time::Duration::from_secs(music_time));
+
             println!("finish");
         });
 
