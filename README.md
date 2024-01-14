@@ -9,9 +9,11 @@
 - オーディオプレイバックライブラリ"rodio"
 
 ## 実行
+実行ファイルがあるディレクトリまで移動  
 ```
 cd ./target/debug/
 ```
+実行ファイルの実行  
 ```
-health-music-player
+./health-music-player
 ```
