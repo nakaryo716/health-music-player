@@ -9,4 +9,9 @@
 - オーディオプレイバックライブラリ"rodio"
 
 ## 実行
-```cargo run```または```./target/debug/nightsound-sli-player``` 
+```
+cd ./target/debug/
+```
+```
+health-music-player
+```
